@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Learn about gold and silver weight units like grams, tola, ounce, and troy ounce. Understand precious metal market standards.">
+    <title>Metal Guide | Calcu Pro - Learn Gold & Silver Basics</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container header-content">
+            <a href="gold.html" class="logo">
+                <div class="logo-icon">🥇</div>
+                <span class="logo-text">Calcu Pro</span>
+            </a>
+
+            <div class="nav-controls">
+                <nav class="nav-links">
+                    <a href="gold.html" class="nav-link">Gold</a>
+                    <a href="silver.html" class="nav-link">Silver</a>
+                    <a href="guide.html" class="nav-link active">Guide</a>
+                </nav>
+
+                <div class="theme-toggle">
+                    <span class="theme-icon">🌙</span>
+                    <label class="theme-switch">
+                        <input type="checkbox" id="themeToggle">
+                        <span class="slider"></span>
+                    </label>
+                    <span class="theme-icon">☀️</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="page-title">
+                <h1>Gold & Silver Guide</h1>
+                <p>Everything you need to know about precious metal measurements</p>
+            </div>
+
+            <section class="calculator-section" style="grid-template-columns: 1fr;">
+                <!-- Weight Units Card -->
+                <div class="calculator-card">
+                    <div class="card-header">
+                        <div class="card-icon">📏</div>
+                        <h2 class="card-title">Weight Units Explained</h2>
+                    </div>
+                    <div style="color: var(--text-secondary); margin-bottom: var(--spacing-lg);">
+                        <p>Precious metals are measured in several units depending on the region and market. Here are
+                            the most common ones used in our calculator:</p>
+                    </div>
+
+                    <div
+                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: var(--spacing-md);">
+                        <div
+                            style="background: var(--bg-input); padding: var(--spacing-md); border-radius: var(--radius-sm);">
+                            <h3 class="text-gold" style="margin-bottom: var(--spacing-xs);">Gram (g)</h3>
+                            <p style="font-size: 0.9rem;">The standard metric unit. International retail prices are
+                                often quoted per gram.</p>
+                        </div>
+                        <div
+                            style="background: var(--bg-input); padding: var(--spacing-md); border-radius: var(--radius-sm);">
+                            <h3 class="text-gold" style="margin-bottom: var(--spacing-xs);">Troy Ounce (oz t)</h3>
+                            <p style="font-size: 0.9rem;"><strong>1 Troy Ounce = 31.1035 grams.</strong> This is the
+                                official unit for global market spot prices (like on TradingView).</p>
+                        </div>
+                        <div
+                            style="background: var(--bg-input); padding: var(--spacing-md); border-radius: var(--radius-sm);">
+                            <h3 class="text-gold" style="margin-bottom: var(--spacing-xs);">Tola</h3>
+                            <p style="font-size: 0.9rem;"><strong>1 Tola = 11.6638 grams.</strong> Widely used in South
+                                Asian countries like Pakistan and India.</p>
+                        </div>
+                        <div
+                            style="background: var(--bg-input); padding: var(--spacing-md); border-radius: var(--radius-sm);">
+                            <h3 class="text-gold" style="margin-bottom: var(--spacing-xs);">Avoirdupois Ounce</h3>
+                            <p style="font-size: 0.9rem;"><strong>1 Standard Ounce = 28.3495 grams.</strong> Used for
+                                common items (food, etc.), but <u>not</u> used in the metal markets.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Market Standard Card -->
+                <div class="calculator-card">
+                    <div class="card-header">
+                        <div class="card-icon">🌎</div>
+                        <h2 class="card-title">The Market Standard</h2>
+                    </div>
+                    <div style="color: var(--text-secondary); line-height: 1.6;">
+                        <p style="margin-bottom: var(--spacing-md);">When you look at the <strong>TradingView</strong>
+                            chart or global news, the price is almost always shown in <strong>USD per Troy
+                                Ounce</strong>.</p>
+                        <p style="margin-bottom: var(--spacing-md);"><strong>Why Troy Ounces?</strong> The Troy system
+                            is a specific system of weights used for precious metals and gemstones. A Troy ounce is
+                            heavier (31.1g) than a regular supermarket ounce (28.3g). To calculate your local price, you
+                            must first convert this global Troy Ounce price into grams or Tolas.</p>
+                        <div
+                            style="padding: var(--spacing-md); border-left: 4px solid var(--gold-primary); background: rgba(255, 215, 0, 0.05); border-radius: 0 var(--radius-sm) var(--radius-sm) 0;">
+                            <p><strong>💡 Pro Tip:</strong> Our calculator automatically converts the Troy Ounce price
+                                you see on the chart into your preferred local weight and currency!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gold vs Silver Card -->
+                <div class="calculator-card">
+                    <div class="card-header">
+                        <div class="card-icon">⚡</div>
+                        <h2 class="card-title">Gold vs. Silver</h2>
+                    </div>
+                    <div style="color: var(--text-secondary); line-height: 1.6;">
+                        <p style="margin-bottom: var(--spacing-md);">Both Gold and Silver are traded as commodities
+                            using the same weight units (Troy Ounces). However, their market behavior differs:</p>
+                        <ul style="margin-left: var(--spacing-xl); margin-bottom: var(--spacing-md);">
+                            <li><strong>Gold:</strong> Often viewed as a "safe haven" asset and store of value. It has
+                                high density and low industrial reactiveness.</li>
+                            <li><strong>Silver:</strong> While also a precious metal, it has massive industrial use
+                                (electronics, solar panels), making it more sensitive to industrial economic cycles.
+                            </li>
+                        </ul>
+                        <p>Our tool provides separate calculators for each to ensure you have the correct real-time
+                            charts and data for your specific metal needs.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-text">
+                © 2024 <span class="text-gold">Calcu Pro</span>. Your metal education hub.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Simple theme initialization for this page
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        if (savedTheme === 'light') {
+            document.body.classList.add('light-theme');
+            document.getElementById('themeToggle').checked = true;
+        }
+        document.getElementById('themeToggle').addEventListener('change', (e) => {
+            const theme = e.target.checked ? 'light' : 'dark';
+            localStorage.setItem('theme', theme);
+            document.body.classList.toggle('light-theme');
+        });
+    </script>
+</body>
+
+</html>
